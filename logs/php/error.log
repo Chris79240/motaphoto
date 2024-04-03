@@ -1,0 +1,2 @@
+[03-Apr-2024 16:14:59 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\oserv\Local Sites\motaphoto\app\public/wp-content/themes/motaphoto-child/css/theme.css in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 15
+[03-Apr-2024 16:14:59 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\oserv\Local Sites\motaphoto\app\public/wp-content/themes/motaphoto-child/css/theme.css in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 15
