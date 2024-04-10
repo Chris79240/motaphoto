@@ -1,4 +1,4 @@
-/*! elementor - v3.20.0 - 26-03-2024 */
+/*! elementor - v3.20.0 - 10-04-2024 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -3545,7 +3545,7 @@ var VoicePromotionAlert = function VoicePromotionAlert(props) {
   var _useIntroduction = (0, _useIntroduction2.default)(props.introductionKey),
     isViewed = _useIntroduction.isViewed,
     markAsViewed = _useIntroduction.markAsViewed;
-  if (!isViewed) {
+  if (isViewed) {
     return null;
   }
   return /*#__PURE__*/_react.default.createElement(_ui.Box, {
