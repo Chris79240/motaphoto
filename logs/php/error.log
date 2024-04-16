@@ -6,3 +6,92 @@
 [04-Apr-2024 16:39:28 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
 [04-Apr-2024 16:53:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
 [10-Apr-2024 15:44:22 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[12-Apr-2024 08:36:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "menu" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[12-Apr-2024 08:38:23 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "menu" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[12-Apr-2024 08:38:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "principal" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[12-Apr-2024 08:38:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "principal" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[15-Apr-2024 15:38:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "principal" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[15-Apr-2024 15:47:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "principal" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[15-Apr-2024 15:49:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "menu" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[15-Apr-2024 15:51:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "menu" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php:3
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template.php(745): load_template('C:\\Users\\oserv\\...', true, Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#5 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#6 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#7 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
+[16-Apr-2024 10:17:26 UTC] PHP Parse error:  syntax error, unexpected identifier "Pour" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 155
