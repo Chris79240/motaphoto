@@ -95,3 +95,45 @@ Stack trace:
 #7 {main}
   thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 3
 [16-Apr-2024 10:17:26 UTC] PHP Parse error:  syntax error, unexpected identifier "Pour" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\header.php on line 155
+[16-Apr-2024 20:03:33 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "get_stylesheet_directory_uri" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php:10
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#3 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 10
+[19-Apr-2024 07:56:13 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\footer.php on line 23
+[19-Apr-2024 08:05:12 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 101
+[19-Apr-2024 13:02:06 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 13:02:06 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 13:02:06 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 13:02:06 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 13:02:12 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:41:08 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:41:09 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:41:09 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:41:09 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:44:55 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:44:55 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:44:55 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:44:55 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[19-Apr-2024 18:45:03 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:32:44 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:32:44 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:32:44 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:32:44 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:32:49 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:08 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:08 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:23 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:23 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:23 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:23 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:33:26 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 10:35:36 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\template-parts\single.php on line 32
+[22-Apr-2024 13:27:12 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 13:27:13 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 13:27:13 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 13:27:13 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 13:27:16 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
+[22-Apr-2024 13:27:21 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 101
