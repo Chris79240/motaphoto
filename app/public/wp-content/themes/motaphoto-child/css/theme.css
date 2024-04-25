@@ -146,51 +146,69 @@ p {
 }
 
 .site-navigation a {
-    text-decoration: none;
-    color: #333; /* Ajuste la couleur du texte selon ton design */
-    font-weight: bold;
+    font-weight: 400;  
 }
 
 .site-navigation a:hover, .site-navigation a:focus {
-    text-decoration: underline;
-    color: #666; /* Ajuste la couleur au survol */
+    font-weight: 700;
+}
+
+.site-header {
+    max-width: 1300px !important;
 }
 
 
 /*************** FOOTER ***************/
 
+.footer-divider {
+    border-top: 1px solid #000000; /* Définit le style de la ligne */
+    width: 1440px; /* Largeur de la ligne */
+    margin-left: -150px;
+    text-align: center;
+}
+
 /* Styles pour le menu du footer */
 .footer-navigation ul {
     list-style: none; /* Supprime les puces */
-    margin: 0;
-    padding: 0;
     display: flex; /* Met les éléments du menu en ligne */
-    justify-content: center; /* Centre les éléments du menu */
+    justify-content: space-evenly; 
 }
 
 .footer-navigation li {
-    margin: 0 10px; /* Espacement horizontal entre les éléments du menu */
+    margin: 0 -40px; /* Espacement horizontal entre les éléments du menu */
 }
 
 .footer-navigation a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-    color: #000000; /* Couleur des liens, ajuste selon ton design */
-    font-weight: bold; /* Rend le texte en gras */
+    font-weight: 400;
 }
 
 .footer-navigation a:hover, .footer-navigation a:focus {
-    text-decoration: underline; /* Ajoute un soulignement au survol ou au focus */
-    color: #000000; /* Change la couleur au survol ou au focus */
+    font-weight: 700; 
 }
 
+/*************** HERO  ***************/
+.hero {
+    position: relative;
+    height: 962px; 
+    width: 1440px;
+    background-image: url('assets/images/nathalie-0.jpeg');
+    background-repeat: no-repeat;
+    background-position: center; /* Centrer l'image dans le div */
+    background-size: cover; /* Assure que toute l'image est visible et conserve ses proportions */
+    margin-left: auto; /* Pour centrer horizontalement le bloc */
+    margin-right: auto; /* Pour centrer horizontalement le bloc */
+    display: flex; /* Utilise Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+}
 
+.hero h1 {
 
-/***************   ***************/
-
-
-
-/***************   ***************/
-
+    color: transparent !important;
+    background: none;
+    -webkit-text-stroke: 1px white; /* Contour blanc pour les navigateurs WebKit */
+    -webkit-text-fill-color: transparent; /* Assure que le remplissage du texte est transparent */
+}
 
 
 /***************   ***************/

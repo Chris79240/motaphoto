@@ -137,3 +137,89 @@ Stack trace:
 [22-Apr-2024 13:27:13 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
 [22-Apr-2024 13:27:16 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 50
 [22-Apr-2024 13:27:21 UTC] PHP Warning:  Undefined array key "value" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\plugins\advanced-custom-fields\includes\locations\class-acf-location-post-taxonomy.php on line 101
+[22-Apr-2024 14:17:15 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[22-Apr-2024 14:20:43 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[23-Apr-2024 15:34:20 UTC] PHP Warning:  Undefined array key 3 in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 14
+[23-Apr-2024 15:34:20 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 14
+[23-Apr-2024 15:34:32 UTC] PHP Warning:  Undefined array key 1 in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 14
+[23-Apr-2024 15:34:32 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 14
+[23-Apr-2024 17:42:47 UTC] PHP Warning:  Array to string conversion in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1108
+[23-Apr-2024 17:44:21 UTC] PHP Warning:  Array to string conversion in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1108
+[23-Apr-2024 17:50:28 UTC] PHP Warning:  Array to string conversion in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1108
+[23-Apr-2024 17:53:25 UTC] PHP Warning:  Array to string conversion in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1123
+[23-Apr-2024 17:54:36 UTC] PHP Warning:  Array to string conversion in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1123
+[23-Apr-2024 18:06:31 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php:1123
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php(4764): wp_check_invalid_utf8(Object(WP_Term))
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php(24): esc_html(Object(WP_Term))
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#5 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1123
+[23-Apr-2024 18:07:47 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php:1123
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php(4764): wp_check_invalid_utf8(Object(WP_Term))
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php(24): esc_html(Object(WP_Term))
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#5 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1123
+[23-Apr-2024 18:08:04 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php:1123
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php(4764): wp_check_invalid_utf8(Object(WP_Term))
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php(24): esc_html(Object(WP_Term))
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\oserv\\...')
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#4 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#5 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1123
+[25-Apr-2024 10:21:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:21:25 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:25:43 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:26:52 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:28:06 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:29:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:31:45 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:31:50 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:31:55 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:32:00 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:32:05 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:34:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:35:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:35:09 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:35:20 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:37:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:38:15 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:40:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:40:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 10:41:03 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Oauth\Components\Connect::get_connect_status(): Status getting error. Reason: User is not connected
+[25-Apr-2024 12:01:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function obtenir_la_photo() in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php:21
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#3 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 21
+[25-Apr-2024 12:03:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function obtenir_la_photo() in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php:20
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#3 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 20
+[25-Apr-2024 12:03:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function obtenir_la_photo() in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php:20
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#3 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 20
+[25-Apr-2024 12:05:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function obtenir_la_photo() in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php:25
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\oserv\\...')
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\index.php(17): require('C:\\Users\\oserv\\...')
+#3 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\front-page.php on line 25

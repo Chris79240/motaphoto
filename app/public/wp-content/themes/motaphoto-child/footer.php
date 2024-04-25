@@ -1,4 +1,5 @@
 <footer id="site-footer" class="site-footer">
+    <hr class="footer-divider" />
     <nav class="footer-navigation">
         <?php
         wp_nav_menu(array(
