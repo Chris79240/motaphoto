@@ -109,11 +109,11 @@ p {
     }
 
     h3, .description-photo {
-        font-size: 18px; /* Same as desktop */
+        font-size: 18px; 
     }
 
     p {
-        font-size: 14px; /* Same as desktop */
+        font-size: 14px; 
     }
 }
 
@@ -211,13 +211,64 @@ p {
 }
 
 
+/*************** SINGLE PHOTO  ***************/
+
+#content {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.left-side {
+    margin-top: 47%;
+    width: 48%;
+}
+
+.header-divider {
+    border-top: 1px solid #000000;
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+.button-photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 20px;
+
+}
+
+.button {
+    background-color: #C4C4C4; 
+    padding: 10px 80px; 
+    color: #000000; 
+    text-decoration: none; 
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.right-side {
+    width: 48%;
+}
+
+.photo-navigation {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.entry-title {
+    text-transform: uppercase;
+} 
+
+.page-header p {
+    font-size: 14px;
+    font-family: "Space Mono", Sans-serif;
+
+
+}
+
 /***************   ***************/
-
-
-
-
-/***************   ***************/
-
-
 
 
