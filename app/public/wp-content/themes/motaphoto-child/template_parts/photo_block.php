@@ -1,10 +1,11 @@
 <?php
-// Utilise $args['id'] passé via get_template_part pour obtenir des données spécifiques de la photo
-$photo_id = $args['id'];
-?>
+$photo_id = $args['id'];  // Assure-toi que l'ID est correctement passé
 
-<div class="photo-block">
-    <img src="<?php echo get_the_post_thumbnail_url($photo_id); ?>" alt="<?php echo esc_attr(get_the_title($photo_id)); ?>">
-    <h3><?php echo get_the_title($photo_id); ?></h3>
-    <!-- Autres détails de la photo -->
-</div>
+if (has_post_thumbnail($photo_id)) {
+    echo '<div class="photo-block">';
+    echo '<img src="' . esc_url(get_the_post_thumbnail_url($photo_id)) . '" alt="' . esc_attr(get_the_title($photo_id)) . '">';
+    echo '<h3>' . get_the_title($photo_id) . '</h3>';
+    echo '</div>';
+} else {
+    echo "<p>Image non disponible.</p>";
+}

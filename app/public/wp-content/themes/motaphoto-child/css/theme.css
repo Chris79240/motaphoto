@@ -235,18 +235,17 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: flex-start;
-    margin-top: 20px;
-
+    align-items: flex-end;
 }
 
 .button {
     background-color: #C4C4C4; 
-    padding: 10px 80px; 
+    padding: 10px 100px; 
     color: #000000; 
     text-decoration: none; 
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 50px;
+    margin-top: -20px;
 }
 
 .right-side {
@@ -254,7 +253,8 @@ p {
 }
 
 .photo-navigation {
-    text-align: center; 
+    text-align: end; 
+    margin-right: 22px;
     margin-top: 20px;
 }
 
@@ -269,6 +269,65 @@ p {
 
 }
 
+.photo-thumbnail {
+    width: 85px;
+    height: 85px;
+    margin-left: 88%;
+    margin-top: -18px;
+}
+
+
+.arrow-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    width: 55px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+    margin-right: -23px;
+}
+
+.arrow-button:hover {
+    font-weight: bold; 
+    color: black; 
+    background-color: transparent;
+}
+
+
+
+
+.divider {
+    width: 1150px; 
+    border-top: 1px solid #000000;
+}
+
 /***************   ***************/
 
+#photo-filters {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 150px;
+}
 
+#photo-filters select {
+    width: 260px; /* Largeur fixe pour les listes déroulantes */
+    height: 43px; /* Hauteur fixe pour les listes déroulantes */
+    padding: 5px 10px; 
+    box-sizing: border-box; 
+}
+
+#photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.photo-block {
+    margin-bottom: 20px;
+}
+
+#load-more-photos {
+    margin-left: 50%;
+}
