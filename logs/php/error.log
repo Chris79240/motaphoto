@@ -234,3 +234,14 @@ Stack trace:
   thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 55
 [26-Apr-2024 09:26:51 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting "elseif" or "else" or "endif" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 63
 [26-Apr-2024 09:28:31 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting "elseif" or "else" or "endif" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 62
+[30-Apr-2024 16:42:11 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 70
+[30-Apr-2024 16:43:06 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 70
+[30-Apr-2024 16:43:22 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 70
+[30-Apr-2024 16:43:27 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 70
+[30-Apr-2024 16:43:32 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 70
+[30-Apr-2024 16:43:34 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 70
+[30-Apr-2024 16:43:49 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 68
+[30-Apr-2024 16:44:31 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 68
+[30-Apr-2024 16:44:54 UTC] PHP Warning:  Attempt to read property "name" on null in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 16
+[30-Apr-2024 16:45:06 UTC] PHP Warning:  Attempt to read property "name" on null in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 16
+[30-Apr-2024 16:47:10 UTC] PHP Warning:  Attempt to read property "name" on null in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\single-photo.php on line 16

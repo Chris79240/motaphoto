@@ -25,6 +25,10 @@ if (!empty($random_images)) {
 <div id="photo-filters">
     <select id="photo-category" onchange="updatePhotoGallery();">
         <option value="">Catégories</option>
+        <option value="">Réception</option>
+        <option value="">Télévision</option>
+        <option value="">Concert</option>
+        <option value="">Mariage</option>
         <?php
         $categories = get_terms(['taxonomy' => 'categories', 'hide_empty' => true]);
         foreach ($categories as $category) {
@@ -35,6 +39,8 @@ if (!empty($random_images)) {
 
     <select id="photo-format" onchange="updatePhotoGallery();">
         <option value="">Formats</option>
+        <option value="">Paysage</option>
+        <option value="">Portrait</option>
         <?php
         $formats = get_terms(['taxonomy' => 'format', 'hide_empty' => true]);
         foreach ($formats as $format) {
@@ -44,6 +50,7 @@ if (!empty($random_images)) {
     </select>
 
     <select id="photo-sort" onchange="updatePhotoGallery();">
+        <option value="trier">Trier par</option>
         <option value="date">Date</option>
         <option value="title">Titre</option>
     </select>
@@ -53,7 +60,7 @@ if (!empty($random_images)) {
     <?php
     $photo_args = array(
         'post_type' => 'photo',
-        'posts_per_page' => 6
+        'posts_per_page' => 8
     );
 
     $photo_query = new WP_Query($photo_args);
@@ -61,7 +68,7 @@ if (!empty($random_images)) {
     if ($photo_query->have_posts()) {
         while ($photo_query->have_posts()) {
             $photo_query->the_post();
-            get_template_part('template-parts/photo_block', null, ['id' => get_the_ID()]);
+            get_template_part('template_parts/photo_block', null, ['id' => get_the_ID()]);
         }
     } else {
         echo "<p>Aucune photo à afficher.</p>";

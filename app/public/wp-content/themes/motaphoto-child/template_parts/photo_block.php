@@ -1,5 +1,5 @@
 <?php
-$photo_id = $args['id'];  // Assure-toi que l'ID est correctement passé
+$photo_id = $args['id'];
 
 if (has_post_thumbnail($photo_id)) {
     echo '<div class="photo-block">';

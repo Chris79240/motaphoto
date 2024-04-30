@@ -10,10 +10,13 @@ get_header();
 if (have_posts()) : while (have_posts()) : the_post();
         // Variables pour les champs personnalisés ACF
         $reference = get_field('reference');
-        $categories = get_field('categories');
-        $format = get_field('format');
         $type = get_field('type');
         $annee = get_field('annee');
+        $terms = get_queried_object();
+        $categories = get_field('categories', $terms)->name;
+        $format = get_field('format', $terms)->name;
+
+
 ?>
         <main id="content" <?php post_class('site-main'); ?>>
             <div class="left-side">

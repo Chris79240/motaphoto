@@ -203,7 +203,6 @@ p {
 }
 
 .hero h1 {
-
     color: transparent !important;
     background: none;
     -webkit-text-stroke: 1px white; /* Contour blanc pour les navigateurs WebKit */
@@ -219,7 +218,7 @@ p {
 }
 
 .left-side {
-    margin-top: 47%;
+    margin-top: 15%;
     width: 48%;
 }
 
@@ -265,8 +264,6 @@ p {
 .page-header p {
     font-size: 14px;
     font-family: "Space Mono", Sans-serif;
-
-
 }
 
 .photo-thumbnail {
@@ -275,7 +272,6 @@ p {
     margin-left: 88%;
     margin-top: -18px;
 }
-
 
 .arrow-button {
     background: none;
@@ -295,39 +291,74 @@ p {
     background-color: transparent;
 }
 
-
-
-
 .divider {
     width: 1150px; 
     border-top: 1px solid #000000;
 }
 
-/***************   ***************/
+/*************** GALERIE PHOTOS  ***************/
 
 #photo-filters {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 50px 150px;
+    align-items: center;
 }
 
 #photo-filters select {
-    width: 260px; /* Largeur fixe pour les listes déroulantes */
-    height: 43px; /* Hauteur fixe pour les listes déroulantes */
+    width: 180px; /* Largeur fixe pour les listes déroulantes */
+    height: 38px; /* Hauteur fixe pour les listes déroulantes */
     padding: 5px 10px; 
     box-sizing: border-box; 
 }
 
+.photo-filter-group {
+    display: flex;
+    gap: 20px; /* Espace entre les deux premiers filtres */
+}
+
+/* Align the third select to the right */
+#photo-sort {
+    margin-left: auto; /* Pousse le sélecteur de tri vers la droite */
+}
+
 #photo-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 10px; /* Espacement entre les images */
+    max-width: 1300px; /* Largeur maximale de la galerie */
+    margin: 20px auto; /* Centre la galerie horizontalement */
 }
 
 .photo-block {
-    margin-bottom: 20px;
+    width: 100%; /* Utilise 100% de la colonne */
+    height: 550px; /* Hauteur fixe pour tous les blocs de photos */
+    overflow: hidden; /* Masque les débordements */
+    position: relative; /* Nécessaire pour positionner correctement l'image */
 }
 
 #load-more-photos {
-    margin-left: 50%;
+    margin-left: 47.5%;
 }
+
+img {
+    object-fit: cover; 
+    object-position: center;
+    }
+
+.photo-block img {
+    width: 100%; /* Ajuste la largeur à 100% du conteneur */
+    height: 100%; /* Ajuste la hauteur à celle du conteneur */
+    object-fit: cover; /* S'assure que l'image couvre le bloc sans déformation */
+    object-position: center; /* Centre l'image dans le bloc */
+}
+
+.photo-block h3 {
+    display: none; /* Cache le titre dans la galerie de photos */
+}
+
+.custom-logo-link img{
+    max-width: 100% !important;
+}
+
+

@@ -14,18 +14,14 @@ jQuery(document).ready(function($) {
             url: ajax_object.ajaxurl, // ajaxurl défini dans WordPress via wp_localize_script().
             type: 'POST',
             data: {
-                'action': 'filter_photos', // Action que WordPress doit exécuter sur le serveur.
-                'category': category,
-                'format': format,
-                'sort': sort
+                action: 'filter_photos', // Action que WordPress doit exécuter sur le serveur.
+                category: category,
+                format: format,
+                sort: sort
             },
             success: function(response) {
                 // Met à jour le contenu de la galerie avec les nouvelles photos.
                 $('#photo-gallery').html(response.content);
-            },
-            error: function() {
-                // Gère les erreurs ici si nécessaire.
-                $('#photo-gallery').html('<p>Erreur lors du chargement des photos.</p>');
             }
         });
     }
@@ -40,32 +36,29 @@ jQuery(document).ready(function($) {
 
     // Fonction pour charger plus de photos, appelée lors du défilement.
     function loadMorePhotos() {
-        if (currentPage < maxPages) {
-            currentPage++; // Incrémenter la page courante.
-            $.ajax({
-                url: ajax_object.ajaxurl,
-                type: 'POST',
-                data: {
-                    'action': 'load_photos',
-                    'page': currentPage,
-                    'category': $('#photo-category').val(),
-                    'format': $('#photo-format').val(),
-                    'sort': $('#photo-sort').val()
-                },
-                success: function(response) {
-                    if (response.content) {
-                        $('#photo-gallery').append(response.content);
-                        if (currentPage >= response.max_pages) {
-                            $('#load-more-photos').hide(); // Cache le bouton si aucune autre page.
-                        }
-                    } else {
-                        $('#load-more-photos').hide();
-                    }
-                },
-                error: function() {
-                    $('#photo-gallery').append('<p>Erreur lors du chargement des photos.</p>');
+        var nextPage = parseInt($('#load-more-photos').data('page')) + 1 || 2;
+        var category = $('#photo-category').val();
+        var format = $('#photo-format').val();
+        var sort = $('#photo-sort').val();
+
+        $.ajax({
+            url: ajax_object.ajaxurl,
+            type: 'POST',
+            data: {
+                action: 'load_photos',
+                page: nextPage,
+                category: category,
+                format: format,
+                sort: sort
+            },
+            success: function(response) {
+                if (response.content) {
+                    $('#photo-gallery').append(response.content);
+                    $('#load-more-photos').data('page', nextPage);
+                } else {
+                    $('#load-more-photos').hide();
                 }
-            });
-        }
+            }
+        });
     }
 });
