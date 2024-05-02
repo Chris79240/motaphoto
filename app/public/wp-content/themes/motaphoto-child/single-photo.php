@@ -33,7 +33,18 @@ if (have_posts()) : while (have_posts()) : the_post();
 
                 <div class="button-photo">
                     <p>Cette photo vous intéresse-t-elle ?</p>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="button">Contact</a>
+
+
+                    <!-- Bouton pour ouvrir la modalité -->
+                    <button class="button open-contact-modal">Contact</button>
+                </div>
+
+                <!-- Modalité de contact -->
+                <div class="contact-modal" style="display:none;">
+                    <div class="contact-modal-content">
+                        <span class="close-modal">&times;</span>
+                        <?php echo do_shortcode('[contact-form-7 id="d196106" title="Formulaire de contact"]'); ?>
+                    </div>
                 </div>
             </div>
             <div class="right-side">
@@ -62,6 +73,22 @@ if (have_posts()) : while (have_posts()) : the_post();
                 </div>
             </div>
         </main>
+
+
+        <script>
+            jQuery(document).ready(function($) {
+                // Ouverture de la modalité
+                $('.open-contact-modal').click(function() {
+                    $('.contact-modal').fadeIn();
+                });
+
+                // Fermeture de la modalité
+                $('.close-modal').click(function() {
+                    $('.contact-modal').fadeOut();
+                });
+            });
+        </script>
+
 <?php endwhile;
 endif; ?>
 
