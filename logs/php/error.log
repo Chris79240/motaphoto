@@ -303,3 +303,6 @@ Stack trace:
 #5 {main}
   thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\formatting.php on line 1123
 [02-May-2024 17:17:22 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\footer.php on line 11
+[06-May-2024 10:30:10 UTC] PHP Parse error:  syntax error, unexpected token "!==" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 151
+[06-May-2024 10:30:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[06-May-2024 10:30:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368

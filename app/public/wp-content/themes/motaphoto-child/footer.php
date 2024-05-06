@@ -11,18 +11,26 @@
     </nav>
 
     <!-- Inclusion de la modale de contact -->
-    <?php get_template_part('template_parts/modal-contact'); ?>
-
-    <!-- Modale de contact -->
-    <div class="contact-modal" style="display:none;">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <?php echo do_shortcode('[contact-form-7 id="d196106" title="Formulaire de contact"]'); ?>
-        </div>
-    </div>
+    <?php get_template_part('template_parts/modale'); ?>
 
     <?php wp_footer(); ?>
 </footer>
+
+<div class="containerLightbox" style="display: none;">
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightboxClose">&times;</span>
+            <img class="lightboxImage" src="" alt="Image agrandie">
+
+            <div class="lightbox-controls">
+                <button class="lightboxPrevious">Précédente</button>
+                <span class="lightboxTitle">Nom de la photo</span>
+                <button class="lightboxNext">Suivante</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>

@@ -39,13 +39,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                     <button class="button open-contact-modal">Contact</button>
                 </div>
 
-                <!-- Modalité de contact -->
-                <div class="contact-modal" style="display:none;">
-                    <div class="contact-modal-content">
-                        <span class="close-modal">&times;</span>
-                        <?php echo do_shortcode('[contact-form-7 id="d196106" title="Formulaire de contact"]'); ?>
-                    </div>
-                </div>
+
             </div>
             <div class="right-side">
                 <?php if (has_post_thumbnail()) : ?>
@@ -73,21 +67,6 @@ if (have_posts()) : while (have_posts()) : the_post();
                 </div>
             </div>
         </main>
-
-
-        <script>
-            jQuery(document).ready(function($) {
-                // Ouverture de la modalité
-                $('.open-contact-modal').click(function() {
-                    $('.contact-modal').fadeIn();
-                });
-
-                // Fermeture de la modalité
-                $('.close-modal').click(function() {
-                    $('.contact-modal').fadeOut();
-                });
-            });
-        </script>
 
 <?php endwhile;
 endif; ?>

@@ -118,6 +118,7 @@ p {
 }
 
 /*************** Header and Footer Styles ***************/
+
 .site-navigation a, .footer-navigation a {
     text-decoration: none;
     color: var(--color-dark-blue);
@@ -157,7 +158,6 @@ p {
     max-width: 1300px !important;
 }
 
-
 /*************** FOOTER ***************/
 
 .footer-divider {
@@ -187,6 +187,7 @@ p {
 }
 
 /*************** HERO  ***************/
+
 .hero {
     position: relative;
     height: 962px; 
@@ -208,7 +209,6 @@ p {
     -webkit-text-stroke: 1px white; /* Contour blanc pour les navigateurs WebKit */
     -webkit-text-fill-color: transparent; /* Assure que le remplissage du texte est transparent */
 }
-
 
 /*************** SINGLE PHOTO  ***************/
 
@@ -245,6 +245,13 @@ p {
     display: inline-block;
     margin-left: 50px;
     margin-top: -20px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #C4C4C4; 
+    color: #000000; 
+    cursor: default; /* Optionnel: assure que le curseur ne change pas pour indiquer que c'est cliquable */
 }
 
 .right-side {
@@ -301,7 +308,7 @@ p {
 #photo-filters {
     display: flex;
     justify-content: space-between;
-    margin: 50px 150px;
+    margin: 50px 550px;
     align-items: center;
 }
 
@@ -310,6 +317,11 @@ p {
     height: 38px; /* Hauteur fixe pour les listes déroulantes */
     padding: 5px 10px; 
     box-sizing: border-box; 
+    margin-left: 150px;
+}
+
+#photo-category {
+    margin-right: 50px;
 }
 
 .photo-filter-group {
@@ -330,6 +342,11 @@ p {
     margin: 20px auto; /* Centre la galerie horizontalement */
 }
 
+#photo-gallery div {
+    margin: 10px;
+    float: left;
+}
+
 .photo-block {
     width: 100%; /* Utilise 100% de la colonne */
     height: 550px; /* Hauteur fixe pour tous les blocs de photos */
@@ -339,6 +356,21 @@ p {
 
 #load-more-photos {
     margin-left: 47.5%;
+}
+
+button#load-more-photos {
+border: none;
+font-family: 'Space Mono';
+color: #000000;
+background-color: #C4C4C4;
+}
+
+button#load-more-photos:hover {
+    background-color: #C4C4C4; 
+    font-family: 'Space Mono';
+    color: #000000; 
+    cursor: default;
+    border: none;
 }
 
 img {
@@ -367,28 +399,132 @@ img {
 
 .contact-modal {
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; 
+    z-index: 9999;
 }
 
 .contact-modal-content {
     background: white;
     padding: 20px;
     border-radius: 5px;
-    max-width: 90%;
-    
-    
-
+    width: auto;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour mieux distinguer la modale */
+    border: 3px solid black;
 }
 
 .close-modal {
     float: right;
     cursor: pointer;
+}
+
+.wpcf7-form {
+    background-color: white; /* Définit le fond comme blanc */
+    padding: 20px; /* Ajoute un peu d'espace autour des éléments du formulaire */
+    border-radius: 8px; /* Bordures arrondies */
+}
+
+.wpcf7-form img {
+    height: auto; /* Garde le ratio de l'image */
+    margin: 5px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea,
+.wpcf7-form input[type="submit"] {
+    box-sizing: border-box; /* S'assure que la largeur inclut le padding et la bordure */
+    margin-bottom: 10px; /* Ajoute un peu d'espace entre les champs */
+    width: 400px;
+    padding: 10px;
+}
+
+.wpcf7-form input[type="submit"] {
+    cursor: pointer; /* Montre un curseur de pointeur pour indiquer que c'est cliquable */
+    display: block; /* Assure que le bouton est sur sa propre ligne */
+    color: black;
+    background-color: #C4C4C4;
+    border: none;
+    font-family: 'Space Mono';
+}
+
+
+/*************** LIGHTBOX ***************/
+
+.containerLightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: none;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 0 10px #fff;
+    text-align: center;
+    color: #fff;
+    position: relative; 
+    margin: auto; 
+    padding: 20px; 
+    box-shadow: 0 0 20px #fff;
+}
+
+.lightboxClose {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lightboxPhoto img {
+    max-width: 90%;
+    max-height: 80%;    
+}
+
+.lightbox {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1050; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-controls {
+    color: white; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 20px; 
+    width: 100%;
+}
+
+.lightboxPrevious {
+    margin-right: 20px;
+}
+
+.lightboxNext {
+    margin-left: 20px;
 }
