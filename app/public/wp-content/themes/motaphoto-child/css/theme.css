@@ -343,15 +343,7 @@ p {
 }
 
 #photo-gallery div {
-    margin: 10px;
     float: left;
-}
-
-.photo-block {
-    width: 100%; /* Utilise 100% de la colonne */
-    height: 550px; /* Hauteur fixe pour tous les blocs de photos */
-    overflow: hidden; /* Masque les débordements */
-    position: relative; /* Nécessaire pour positionner correctement l'image */
 }
 
 #load-more-photos {
@@ -378,21 +370,47 @@ img {
     object-position: center;
     }
 
+.photo-block {
+    position: relative; /* Nécessaire pour positionner correctement l'image */
+    display: inline-block;
+    cursor: pointer;
+    width: 100%; /* Utilise 100% de la colonne */
+    height: 550px; /* Hauteur fixe pour tous les blocs de photos */
+    overflow: hidden; /* Masque les débordements */
+}
+
 .photo-block img {
-    width: 100%; /* Ajuste la largeur à 100% du conteneur */
-    height: 100%; /* Ajuste la hauteur à celle du conteneur */
-    object-fit: cover; /* S'assure que l'image couvre le bloc sans déformation */
-    object-position: center; /* Centre l'image dans le bloc */
+    display: block;
+    width: 100%; 
+    height: 100%;
 }
 
-.photo-block h3 {
-    display: none; /* Cache le titre dans la galerie de photos */
+.photo-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(150, 150, 150, 0.8); /* Gris foncé semi-transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.custom-logo-link img{
-    max-width: 100% !important;
+.photo-icon::after {
+    content: '';
+    background-image: url('../assets/images/icon_eye.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px; 
+    height: 50px; 
 }
 
+.photo-block:hover .photo-icon {
+    opacity: 1;
+}
 
 /*************** MODALE ***************/
 
