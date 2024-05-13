@@ -19,6 +19,22 @@
             ?>
         </div>
 
+        <!-- Burger Menu -->
+        <div class="burger-menu-container">
+            <button class="burger-menu-button">&#9776;</button>
+            <div class="burger-menu-content">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'menu-header',
+                    'menu_id'        => 'primary-menu',
+                    'container'      => false,
+                    'items_wrap'     => '%3$s', // removes the ul wrapper
+                ));
+                ?>
+            </div>
+        </div>
+
+        <!-- Standard Navigation -->
         <nav class="site-navigation">
             <?php
             wp_nav_menu(array(
@@ -29,13 +45,5 @@
             ?>
         </nav>
     </header>
-
-
-
-
-
-
-
-
 
     <?php wp_body_open(); ?>

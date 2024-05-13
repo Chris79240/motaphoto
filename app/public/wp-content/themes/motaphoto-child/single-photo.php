@@ -34,13 +34,11 @@ if (have_posts()) : while (have_posts()) : the_post();
                 <div class="button-photo">
                     <p>Cette photo vous intéresse-t-elle ?</p>
 
-
                     <!-- Bouton pour ouvrir la modalité -->
                     <button class="button open-contact-modal">Contact</button>
                 </div>
-
-
             </div>
+
             <div class="right-side">
                 <?php if (has_post_thumbnail()) : ?>
                     <div class="photo-main">
@@ -63,7 +61,9 @@ if (have_posts()) : while (have_posts()) : the_post();
                     if (!empty($prev_post)) : ?>
                         <button class="arrow-button" onclick="location.href='<?php echo get_permalink($prev_post->ID); ?>'">&#x2190;</button>
                     <?php endif; ?>
-                    <button class="arrow-button" onclick="location.href='<?php echo get_next_post_link(); ?>'">&#x2192;</button>
+                    <?php echo get_next_post_link('%link', '→'); ?>
+
+
                 </div>
             </div>
         </main>
@@ -73,51 +73,29 @@ endif; ?>
 
 <hr class="divider" />
 
-<h3>VOUS AIMEREZ AUSSI</h3>
+<h3 id="aussi">VOUS AIMEREZ AUSSI</h3>
 
-<div class="left-side">
-    <div id="vousaimerez">
-        <?php
-        $photo_args = array(
-            'post_type' => 'photo',
-            'posts_per_page' => 2
-        );
+<div class="related-photos-container">
+    <?php
+    $photo_args = array(
+        'post_type' => 'photo',
+        'posts_per_page' => 2, // Adjust the number of photos as needed
+        'orderby' => 'rand', // Randomize photos
+        'post__not_in' => array(get_the_ID()) // Exclude current post
+    );
 
-        $photo_query = new WP_Query($photo_args);
+    $photo_query = new WP_Query($photo_args);
 
-        if ($photo_query->have_posts()) {
-            while ($photo_query->have_posts()) {
-                $photo_query->the_post();
-                get_template_part('template_parts/photo_block', null, ['id' => get_the_ID()]);
-            }
-        } else {
-            echo "<p>Aaaaaaaaaaaaa.</p>";
+    if ($photo_query->have_posts()) {
+        while ($photo_query->have_posts()) {
+            $photo_query->the_post();
+            get_template_part('template_parts/photo_block', null, ['id' => get_the_ID()]);
         }
-        wp_reset_postdata();
-        ?>
-    </div>
+    } else {
+        echo "<p>Aucune photo supplémentaire à afficher.</p>";
+    }
+    wp_reset_postdata();
+    ?>
+</div>
 
-    <div class="right-side">
-
-        <div id="vousaimerez">
-            <?php
-            $photo_args = array(
-                'post_type' => 'photo',
-                'posts_per_page' => 1
-            );
-            $photo_query = new WP_Query($photo_args);
-            if ($photo_query->have_posts()) {
-                while ($photo_query->have_posts()) {
-                    $photo_query->the_post();
-                    get_template_part('template_parts/photo_block', null, ['id' => get_the_ID()]);
-                }
-            } else {
-                echo "<p>Aaaaaaaaaaaaa.</p>";
-            }
-            wp_reset_postdata();
-            ?>
-        </div>
-
-
-
-        <?php get_footer(); ?>
+<?php get_footer(); ?>

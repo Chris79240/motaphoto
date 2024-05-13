@@ -9,7 +9,8 @@ $random_images = get_posts(array(
     'no_found_rows' => true // Optimise la requête pour ne pas compter les résultats, plus rapide
 ));
 
-$hero_image_url = get_stylesheet_directory_uri() . '/assets/images/header.png';
+
+$hero_image_url = !empty($random_images) ? get_the_post_thumbnail_url($random_images[0]->ID, 'full') : get_stylesheet_directory_uri() . '/assets/images/header.png';
 
 // Si on a récupéré une image, on prend son URL
 if (!empty($random_images)) {
@@ -23,7 +24,7 @@ if (!empty($random_images)) {
 </div>
 
 <div id="photo-filters">
-    <select id="photo-category" onchange="updatePhotoGallery();">
+    <select id="photo-category" class="photo-filter">
         <option value="">Catégories</option>
         <option value="">Réception</option>
         <option value="">Télévision</option>
@@ -37,7 +38,7 @@ if (!empty($random_images)) {
         ?>
     </select>
 
-    <select id="photo-format" onchange="updatePhotoGallery();">
+    <select id="photo-format" class="photo-filter">
         <option value="">Formats</option>
         <option value="">Paysage</option>
         <option value="">Portrait</option>
@@ -49,8 +50,8 @@ if (!empty($random_images)) {
         ?>
     </select>
 
-    <select id="photo-sort" onchange="updatePhotoGallery();">
-        <option value="trier">Trier par</option>
+    <select id="photo-sort" class="photo-filter">
+        <option value="">Trier par</option>
         <option value="date">Date</option>
         <option value="title">Titre</option>
     </select>
@@ -77,6 +78,6 @@ if (!empty($random_images)) {
     ?>
 </div>
 
-<button id="load-more-photos" onclick="loadMorePhotos();">Charger plus</button>
+<button id="load-more-photos">Charger plus</button>
 
 <?php get_footer(); ?>
