@@ -1,0 +1,111 @@
+[16-May-2024 13:13:43 UTC] category
+[16-May-2024 13:13:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:16:21 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "FILTER_SANITIZE_NUMBER_STRING" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php:20
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(324): filter_photos_ajax('')
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:16:30 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "FILTER_SANITIZE_NUMBER_STRING" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php:20
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(324): filter_photos_ajax('')
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:16:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "FILTER_SANITIZE_NUMBER_STRING" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php:20
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(324): filter_photos_ajax('')
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:16:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "FILTER_SANITIZE_NUMBER_STRING" in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php:20
+Stack trace:
+#0 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(324): filter_photos_ajax('')
+#1 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\oserv\Local Sites\motaphoto\app\public\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:17:52 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:17:52 UTC] categoryMariage
+[16-May-2024 13:17:52 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:17:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:17:57 UTC] categoryRéception
+[16-May-2024 13:17:57 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:19:17 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:19:17 UTC] categoryMariage
+[16-May-2024 13:19:17 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:19:17 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:19:21 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:19:21 UTC] categoryMariage
+[16-May-2024 13:19:21 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:19:21 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:19:26 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:19:26 UTC] categoryMariage
+[16-May-2024 13:19:26 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:19:26 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:19:37 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:19:37 UTC] categoryCatégories
+[16-May-2024 13:19:37 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:19:37 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:27:02 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:27:49 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:28:02 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:28:26 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:28:28 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:29:08 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:29:37 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:33:51 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:33:51 UTC] categoryMariage
+[16-May-2024 13:33:51 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:33:51 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:33:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:33:54 UTC] categoryRéception
+[16-May-2024 13:33:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:33:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:33:58 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:33:58 UTC] categoryMariage
+[16-May-2024 13:33:58 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:33:58 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:35:31 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:35:31 UTC] categoryMariage
+[16-May-2024 13:35:31 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:35:31 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:35:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:35:35 UTC] categoryMariage
+[16-May-2024 13:35:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:35:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:37:04 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:37:04 UTC] categoryConcert
+[16-May-2024 13:37:04 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:37:04 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:37:07 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:37:07 UTC] categoryConcert
+[16-May-2024 13:37:07 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:37:07 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:38:15 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:39:10 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:39:15 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:40:12 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:40:12 UTC] categoryRéception
+[16-May-2024 13:40:12 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:40:12 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:44:44 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:44:44 UTC] categoryRéception
+[16-May-2024 13:44:44 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:44:44 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:44:46 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 20
+[16-May-2024 13:44:46 UTC] categoryMariage
+[16-May-2024 13:44:47 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 22
+[16-May-2024 13:44:47 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-content\themes\motaphoto-child\functions.php on line 23
+[16-May-2024 13:51:03 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:52:29 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[16-May-2024 13:52:58 UTC] PHP Notice:  La fonction register_taxonomy a été appelée de façon incorrecte. La propriété « name » de la taxonomie « format » (format) ne fonctionne pas avec l’une des propriétés déjà existantes sur le contrôleur de publications de l’API REST. Spécifiez une « rest_base » personnalisée lors de l’enregistrement de la taxonomie pour éviter cette erreur. Veuillez lire <a>Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.4.0.) in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\functions.php on line 6078
+[17-May-2024 09:58:34 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wpdb.php on line 1987
+[17-May-2024 09:58:57 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\oserv\Local Sites\motaphoto\app\public\wp-includes\class-wpdb.php on line 1987

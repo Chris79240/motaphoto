@@ -158,6 +158,108 @@ p {
     max-width: 1300px !important;
 }
 
+@media (max-width: 425px){
+    .site-header {
+        margin-left: 40px;
+    }
+}
+
+/*************** BURGER ***************/
+
+/* Style général du menu burger */
+.burger-menu-container {
+    display: none; /* Caché par défaut */
+    position: relative;
+}
+
+
+
+button.nav-toggler {
+    background-color: transparent !important;
+    border: none !important;
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-top: -15px;
+}
+
+
+
+#burger-menu-button {
+    display: none;
+    background-color: transparent; /* Couleur de fond du bouton */
+    color: black; /* Couleur du texte du bouton */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    list-style: none;
+}
+
+.burger-menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.burger-menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .site-navigation {
+        display: none !important;
+    }
+
+    #burger-menu-button {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .burger-menu-container {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .ligne {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background: black;
+        transition: transform 0.3s ease-out;
+    }
+    .l1{
+        transform: translateY(-10px);
+     }
+     .l3{
+         transform: translateY(10px);
+     }
+    .nav-toggler.active .l1 {
+        transform: translateY(0) rotate(135deg);
+    }
+    .nav-toggler.active .l3 {
+        transform: translateY(0) rotate(-135deg);
+    }
+    .nav-toggler.active .l2 {
+        opacity: 0;
+    }
+}
+
 /*************** FOOTER ***************/
 
 .footer-divider {
@@ -209,6 +311,20 @@ p {
     -webkit-text-stroke: 1px white; /* Contour blanc pour les navigateurs WebKit */
     -webkit-text-fill-color: transparent; /* Assure que le remplissage du texte est transparent */
 }
+
+@media (max-width: 425px) {
+    .hero {
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero h1 {
+        font-size: 40px !important;
+    }
+    
+}
+
 
 /*************** SINGLE PHOTO  ***************/
 
@@ -313,7 +429,7 @@ p {
     border-top: 1px solid #000000;
 }
 
-/*************** GALERIE PHOTOS  ***************/
+/*************** FILTRES  ***************/
 
 #photo-filters {
     display: flex;
@@ -344,6 +460,18 @@ p {
     margin-left: auto; /* Pousse le sélecteur de tri vers la droite */
 }
 
+@media (max-width: 425px){
+    #photo-filters {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        margin: 20px -10px;
+    }
+}
+
+
+/*************** GALERIE PHOTOS  ***************/
+
 #photo-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
@@ -357,7 +485,7 @@ p {
 }
 
 #load-more-photos {
-    margin-left: 47.5%;
+    margin-left: 46%;
 }
 
 button#load-more-photos {
@@ -420,6 +548,18 @@ img {
 
 .photo-block:hover .photo-icon {
     opacity: 1;
+}
+
+@media (max-width: 425px){
+    #photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        max-width: 425px;
+    }
+
+    #load-more-photos {
+        margin-left: 33%;
+    }
 }
 
 /*************** MODALE ***************/

@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
     // Fonction pour mettre à jour la galerie selon les filtres appliqués
     function updatePhotoGallery() {
-        var category = $('#photo-category').val();
-        var format = $('#photo-format').val();
-        var sort = $('#photo-sort').val();
+        var category = $('#photo-category').find(":selected").text();
+        var format = $('#photo-format').find(":selected").text();
+        var sort = $('#photo-sort').find(":selected").text();
         $.ajax({
             url: ajax_object.ajaxurl,
             type: 'POST',
@@ -67,4 +67,42 @@ jQuery(document).ready(function($) {
     document.querySelector('.lightboxClose').addEventListener('click', function() {
         document.querySelector('.lightbox').style.display = 'none';
     });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var burgerButton = document.querySelector('.burger-menu-button');
+    var burgerContent = document.querySelector('.burger-menu-content');
+
+    burgerButton.addEventListener('click', function() {
+        var display = burgerContent.style.display;
+        burgerContent.style.display = display === 'block' ? 'none' : 'block';
+    });
+
+    // Close the burger menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!burgerButton.contains(event.target) && !burgerContent.contains(event.target) && burgerContent.style.display === 'block') {
+            burgerContent.style.display = 'none';
+        }
+    });
+});
+
+
+
+//gestion du menu burger//
+const navToggler = document.querySelector('.nav-toggler');
+const menuContent = document.querySelector('.burger-menu-content');
+navToggler.addEventListener('click', function() {
+    this.classList.toggle('active');
+    const header = document.querySelector('header');
+    header.classList.toggle('fixed');
+    menuContent.classList.toggle('active'); // Utilisez 'active' au lieu de 'display'
+});
+// Cliquer à l'extérieur pour fermer le menu
+document.addEventListener('click', function(event) {
+    if (!navToggler.contains(event.target) && !menuContent.contains(event.target)) {
+        navToggler.classList.remove('active');
+        menuContent.classList.remove('active');
+    }
 });

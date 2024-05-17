@@ -17,15 +17,16 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles_and_scripts');
  */
 function filter_photos_ajax()
 {
-    $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_NUMBER_INT);
-    $format = filter_input(INPUT_POST, 'format', FILTER_SANITIZE_NUMBER_INT);
+    $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_STRING);
+    error_log("category" . $category);
+    $format = filter_input(INPUT_POST, 'format', FILTER_SANITIZE_STRING);
     $sort = filter_input(INPUT_POST, 'sort', FILTER_SANITIZE_STRING);
     $args = [
         'post_type' => 'photo',
         'posts_per_page' => -1,
         'tax_query' => [
-            ['taxonomy' => 'photo_categories', 'field' => 'term_id', 'terms' => $category],
-            ['taxonomy' => 'photo_formats', 'field' => 'term_id', 'terms' => $format]
+            ['taxonomy' => 'categories', 'field' => 'term_id', 'terms' => $category],
+            ['taxonomy' => 'format2', 'field' => 'term_id', 'terms' => $format]
         ],
         'orderby' => $sort ?: 'date',
         'order' => 'ASC'
