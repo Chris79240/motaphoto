@@ -13,24 +13,98 @@ function theme_enqueue_styles_and_scripts()
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles_and_scripts');
 
 /**
+ * Enregistre les taxonomies pour les photos.
+ */
+function create_photo_taxonomies()
+{
+    // Taxonomie 'categories'
+    $labels_categories = array(
+        'name'              => _x('Catégories', 'taxonomy general name'),
+        'singular_name'     => _x('Catégorie', 'taxonomy singular name'),
+        'search_items'      => __('Rechercher des catégories'),
+        'all_items'         => __('Toutes les catégories'),
+        'parent_item'       => __('Catégorie parente'),
+        'parent_item_colon' => __('Catégorie parente:'),
+        'edit_item'         => __('Modifier la catégorie'),
+        'update_item'       => __('Mettre à jour la catégorie'),
+        'add_new_item'      => __('Ajouter une nouvelle catégorie'),
+        'new_item_name'     => __('Nom de la nouvelle catégorie'),
+        'menu_name'         => __('Catégories'),
+    );
+
+    $args_categories = array(
+        'hierarchical'      => true,
+        'labels'            => $labels_categories,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'categories'),
+    );
+
+    register_taxonomy('categories', array('photo'), $args_categories);
+
+    // Taxonomie 'format'
+    $labels_format = array(
+        'name'              => _x('Formats', 'taxonomy general name'),
+        'singular_name'     => _x('Format', 'taxonomy singular name'),
+        'search_items'      => __('Rechercher des formats'),
+        'all_items'         => __('Tous les formats'),
+        'parent_item'       => __('Format parent'),
+        'parent_item_colon' => __('Format parent:'),
+        'edit_item'         => __('Modifier le format'),
+        'update_item'       => __('Mettre à jour le format'),
+        'add_new_item'      => __('Ajouter un nouveau format'),
+        'new_item_name'     => __('Nom du nouveau format'),
+        'menu_name'         => __('Formats'),
+    );
+
+    $args_format = array(
+        'hierarchical'      => true,
+        'labels'            => $labels_format,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'format'),
+    );
+
+    register_taxonomy('format', array('photo'), $args_format);
+}
+add_action('init', 'create_photo_taxonomies');
+
+/**
  * Gère les requêtes AJAX pour filtrer les photos selon les catégories et formats.
  */
 function filter_photos_ajax()
 {
-    $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_STRING);
-    error_log("category" . $category);
-    $format = filter_input(INPUT_POST, 'format', FILTER_SANITIZE_STRING);
-    $sort = filter_input(INPUT_POST, 'sort', FILTER_SANITIZE_STRING);
+    $category = isset($_POST['category']) ? $_POST['category'] : '';
+    $format = isset($_POST['format']) ? $_POST['format'] : '';
+    $sort = isset($_POST['sort']) ? $_POST['sort'] : 'date';
     $args = [
         'post_type' => 'photo',
         'posts_per_page' => -1,
         'tax_query' => [
-            ['taxonomy' => 'categories', 'field' => 'term_id', 'terms' => $category],
-            ['taxonomy' => 'format2', 'field' => 'term_id', 'terms' => $format]
+            'relation' => 'AND'
         ],
         'orderby' => $sort ?: 'date',
         'order' => 'ASC'
     ];
+
+    if ($category) {
+        $args['tax_query'][] = [
+            'taxonomy' => 'categories',
+            'field' => 'term_id',
+            'terms' => $category,
+        ];
+    }
+
+    if ($format) {
+        $args['tax_query'][] = [
+            'taxonomy' => 'format',
+            'field' => 'term_id',
+            'terms' => $format,
+        ];
+    }
+
     $query = new WP_Query($args);
     $content = '';
     if ($query->have_posts()) {
@@ -51,10 +125,8 @@ add_action('wp_ajax_nopriv_filter_photos', 'filter_photos_ajax');
 /**
  * Gère la pagination infinie AJAX pour les photos.
  */
-
 function load_more_photos_ajax()
 {
-    // S'assurer que le numéro de page est correctement obtenu et incrémenté
     $page = isset($_POST['page']) ? (int) $_POST['page'] : 1;
 
     $args = [

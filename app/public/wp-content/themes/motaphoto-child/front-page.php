@@ -26,26 +26,20 @@ if (!empty($random_images)) {
 <div id="photo-filters">
     <select id="photo-category" class="photo-filter">
         <option value="">Catégories</option>
-        <option value="">Réception</option>
-        <option value="">Télévision</option>
-        <option value="">Concert</option>
-        <option value="">Mariage</option>
         <?php
-        $categories = get_terms(['taxonomy' => 'categories', 'hide_empty' => true]);
+        $categories = get_terms(['taxonomy' => 'categories', 'hide_empty' => false]);
         foreach ($categories as $category) {
-            echo '<option value="' . $category->term_id . '">' . $category->name . '</option>';
+            echo '<option value="' . esc_attr($category->term_id) . '">' . esc_html($category->name) . '</option>';
         }
         ?>
     </select>
 
     <select id="photo-format" class="photo-filter">
         <option value="">Formats</option>
-        <option value="">Paysage</option>
-        <option value="">Portrait</option>
         <?php
-        $formats = get_terms(['taxonomy' => 'format', 'hide_empty' => true]);
+        $formats = get_terms(['taxonomy' => 'format', 'hide_empty' => false]);
         foreach ($formats as $format) {
-            echo '<option value="' . $format->term_id . '">' . $format->name . '</option>';
+            echo '<option value="' . esc_attr($format->term_id) . '">' . esc_html($format->name) . '</option>';
         }
         ?>
     </select>

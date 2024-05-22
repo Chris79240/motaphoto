@@ -34,7 +34,7 @@ $formats = get_terms(array('taxonomy' => 'format', 'hide_empty' => true));
     <?php
     $photo_args = array(
         'post_type' => 'photo',
-        'posts_per_page' => 6
+        'posts_per_page' => 8
     );
     $photo_query = new WP_Query($photo_args);
 

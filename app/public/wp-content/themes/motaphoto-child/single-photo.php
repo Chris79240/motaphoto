@@ -12,9 +12,8 @@ if (have_posts()) : while (have_posts()) : the_post();
         $reference = get_field('reference');
         $type = get_field('type');
         $annee = get_field('annee');
-        $terms = get_queried_object();
-        $categories = get_field('categories', $terms)->name;
-        $format = get_field('format', $terms)->name;
+        $categories = wp_get_post_terms(get_the_ID(), 'categories');
+        $format = wp_get_post_terms(get_the_ID(), 'format');
 
 
 ?>
@@ -23,8 +22,28 @@ if (have_posts()) : while (have_posts()) : the_post();
                 <header class="page-header">
                     <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
                     <p>Référence: <?php echo esc_html($reference); ?></p>
-                    <p>Catégories: <?php echo esc_html($categories); ?></p>
-                    <p>Format: <?php echo esc_html($format); ?></p>
+                    <p>Catégories:
+                        <?php
+                        if (!empty($categories) && !is_wp_error($categories)) {
+                            foreach ($categories as $category) {
+                                echo esc_html($category->name) . ' ';
+                            }
+                        } else {
+                            echo 'N/A';
+                        }
+                        ?>
+                    </p>
+                    <p>Format:
+                        <?php
+                        if (!empty($format) && !is_wp_error($format)) {
+                            foreach ($format as $formats) {
+                                echo esc_html($formats->name) . ' ';
+                            }
+                        } else {
+                            echo 'N/A';
+                        }
+                        ?>
+                    </p>
                     <p>Type: <?php echo esc_html($type); ?></p>
                     <p>Année: <?php echo esc_html($annee); ?></p>
                 </header>
