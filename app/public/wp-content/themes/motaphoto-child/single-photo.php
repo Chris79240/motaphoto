@@ -98,9 +98,9 @@ endif; ?>
     <?php
     $photo_args = array(
         'post_type' => 'photo',
-        'posts_per_page' => 2, // Adjust the number of photos as needed
-        'orderby' => 'rand', // Randomize photos
-        'post__not_in' => array(get_the_ID()) // Exclude current post
+        'posts_per_page' => 2,
+        'orderby' => 'rand',
+        'post__not_in' => array(get_the_ID()) // Exclus le message actuel
     );
 
     $photo_query = new WP_Query($photo_args);

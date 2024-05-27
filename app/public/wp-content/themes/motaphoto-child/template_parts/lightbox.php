@@ -1,15 +1,17 @@
 <div class="containerLightbox">
-    <div id="lightbox" class="lightbox" style="display: none;">
+    <div id="lightbox" class="lightbox">
         <div class="lightbox-content">
-            <span class="lightboxClose" style="cursor: pointer;">&times;</span>
-            <span class="lightboxCategorie"></span>
-            <span class="lightboxReference"></span>
-
-            <span class="lightboxPrevious" style="cursor: pointer;">&larr;</span>
+            <span class="lightboxClose"></span>
+            <span class="lightboxPrevious"></span>
+            <span class="lightboxNext"></span>
             <div class="lightboxPhoto">
                 <img class="lightboxImage" src="" alt="Image de la lightbox">
             </div>
-            <span class="lightboxNext" style="cursor: pointer;">&rarr;</span>
+            <div class="lightbox-details">
+                <span class="lightboxTitle"></span>
+                <span class="lightboxCategorie"></span>
+                <span class="lightboxReference"></span>
+            </div>
         </div>
     </div>
 </div>
