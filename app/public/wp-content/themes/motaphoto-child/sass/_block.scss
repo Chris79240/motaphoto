@@ -1,0 +1,19 @@
+.related-photos-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    max-width: 1150px;
+    margin-left: 22%;
+}
+
+.related-photos-container .photo-block {
+    flex: 1 1 48%;
+    margin: 10px;
+    margin-bottom: 70px;
+}
+
+/**VOUS AIMEREZ AUSSI **/
+#aussi { 
+    margin: 65px 0 40px 22.5%;
+}
+

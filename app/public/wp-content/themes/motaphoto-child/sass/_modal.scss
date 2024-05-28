@@ -1,0 +1,58 @@
+.contact-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.contact-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: auto;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour mieux distinguer la modale */
+    border: 3px solid black;
+}
+
+.close-modal {
+    float: right;
+    cursor: pointer;
+}
+
+.wpcf7-form {
+    background-color: white; /* Définit le fond comme blanc */
+    padding: 20px; /* Ajoute un peu d'espace autour des éléments du formulaire */
+    border-radius: 8px; /* Bordures arrondies */
+}
+
+.wpcf7-form img {
+    height: auto; /* Garde le ratio de l'image */
+    margin: 5px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea,
+.wpcf7-form input[type="submit"] {
+    box-sizing: border-box; /* S'assure que la largeur inclut le padding et la bordure */
+    margin-bottom: 10px; /* Ajoute un peu d'espace entre les champs */
+    width: 400px;
+    padding: 10px;
+}
+
+.wpcf7-form input[type="submit"] {
+    cursor: pointer; /* Montre un curseur de pointeur pour indiquer que c'est cliquable */
+    display: block; /* Assure que le bouton est sur sa propre ligne */
+    color: black;
+    background-color: #C4C4C4;
+    border: none;
+    font-family: 'Space Mono';
+}

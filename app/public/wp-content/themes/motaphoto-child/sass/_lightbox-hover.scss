@@ -1,0 +1,95 @@
+/*************** SURVOL LIGHTBOX GALERIE ***************/
+/* Styles pour les icônes et informations supplémentaires */
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    pointer-events: none; /* Pour permettre de cliquer sur l'image en dessous */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo-block:hover .photo-overlay {
+    opacity: 1;
+}
+
+.fullscreen-icon {
+    background-image: url('../assets/images/icon_fullscreen.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-self: flex-start; /* En haut à gauche */
+    pointer-events: auto; /* Permet de cliquer sur cette icône */
+}
+
+.photo-reference, .photo-category {
+    color: white;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.photo-reference {
+    /*align-self: flex-start; /* En bas à gauche */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.photo-category {
+    align-self: flex-end; /* En bas à droite */
+}
+
+.photo-block {
+    position: relative; /* Nécessaire pour positionner correctement l'image */
+    display: inline-block;
+    cursor: pointer;
+    width: 100%; /* Utilise 100% de la colonne */
+    height: 550px; /* Hauteur fixe pour tous les blocs de photos */
+    overflow: hidden; /* Masque les débordements */
+}
+
+.photo-block img {
+    display: block;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.photo-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(150, 150, 150, 0.8); /* Gris foncé semi-transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo-icon::after {
+    content: '';
+    background-image: url('../assets/images/icon_eye.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px; 
+    height: 50px; 
+}
+
+.photo-block:hover .photo-icon {
+    opacity: 1;
+}

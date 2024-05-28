@@ -1,0 +1,32 @@
+/*************** FILTRES ***************/
+
+#photo-filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 550px;
+    align-items: center;
+}
+
+#photo-filters select {
+    width: 300px; /* Largeur fixe pour les listes déroulantes */
+    height: 50px; /* Hauteur fixe pour les listes déroulantes */
+    padding: 5px 10px; 
+    box-sizing: border-box; 
+    margin-left: 70px;
+    border-radius: 10px;
+}
+
+#photo-category {
+    margin-right: -360px;
+}
+
+.photo-filter-group {
+    display: flex;
+    gap: 20px; /* Espace entre les deux premiers filtres */
+}
+
+/* Aligne la troisième sélection à droite */
+#photo-sort {
+    margin-left: auto; /* Pousse le sélecteur de tri vers la droite */
+    margin-right: 80px;
+}

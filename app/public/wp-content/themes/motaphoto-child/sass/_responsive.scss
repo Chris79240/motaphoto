@@ -1,0 +1,103 @@
+/*************** TYPOGRAPHIE MOBILE ***************/
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 27.59px;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+
+    h3, .description-photo {
+        font-size: 18px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+}
+
+/*************** STYLES DU HEADER ***************/
+@media (max-width: 425px) {
+    .site-header {
+        margin-left: 40px;
+    }
+}
+
+/*************** STYLES HERO ***************/
+@media (max-width: 425px) {
+    .hero {
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero h1 {
+        font-size: 40px !important;
+    }
+}
+
+/*************** FILTRES ***************/
+@media (max-width: 425px) {
+    #photo-filters {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        margin: 20px -10px;
+    }
+}
+
+/*************** GALERIE PHOTOS ***************/
+@media (max-width: 425px) {
+    #photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        max-width: 425px;
+    }
+
+    #load-more-photos {
+        margin-left: 33%;
+    }
+}
+
+/*************** BURGER MENU ***************/
+@media screen and (max-width: 425px) {
+    .site-navigation {
+        display: none !important;
+    }
+
+    #burger-menu-button {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .burger-menu-container {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .ligne {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background: black;
+        transition: transform 0.3s ease-out;
+    }
+    .l1 {
+        transform: translateY(-10px);
+    }
+    .l3 {
+        transform: translateY(10px);
+    }
+    .nav-toggler.active .l1 {
+        transform: translateY(0) rotate(135deg);
+    }
+    .nav-toggler.active .l3 {
+        transform: translateY(0) rotate(-135deg);
+    }
+    .nav-toggler.active .l2 {
+        opacity: 0;
+    }
+}

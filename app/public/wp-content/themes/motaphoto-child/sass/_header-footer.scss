@@ -1,0 +1,63 @@
+/*************** STYLES DU HEADER ET DU FOOTER ***************/
+
+/* Liens du menu de navigation et du footer */
+.site-navigation a, .footer-navigation a {
+    text-decoration: none;
+    color: var(--color-dark-blue);
+    font-weight: bold;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-navigation li {
+    margin: 0 15px;
+}
+
+.site-navigation a {
+    font-weight: 400;  
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+    font-weight: 700;
+}
+
+.site-header {
+    max-width: 1300px !important;
+}
+
+.footer-divider {
+    border-top: 1px solid #000000; /* Définit le style de la ligne */
+    width: 1440px; /* Largeur de la ligne */
+    margin-left: -150px;
+    text-align: center;
+}
+
+.footer-navigation ul {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Met les éléments du menu en ligne */
+    justify-content: space-evenly; 
+}
+
+.footer-navigation li {
+    margin: 0 -40px; /* Espacement horizontal entre les éléments du menu */
+}
+
+.footer-navigation a {
+    font-weight: 400;
+}
+
+.footer-navigation a:hover, .footer-navigation a:focus {
+    font-weight: 700; 
+}

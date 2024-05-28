@@ -1,0 +1,99 @@
+#content {
+    display: flex; 
+    position: relative;
+    min-height: 950px;
+}
+
+.left-side {
+    margin-top: 15%;
+    width: 48%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.header-divider {
+    border-top: 1px solid #000000;
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.button-photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+
+.button {
+    background-color: #C4C4C4; 
+    padding: 10px 95px; 
+    color: #000000; 
+    text-decoration: none; 
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: -20px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #C4C4C4; 
+    color: #000000; 
+    cursor: default; /* Optionnel: assure que le curseur ne change pas pour indiquer que c'est cliquable */
+}
+
+.right-side {
+    width: 48%;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    margin-top: 15%;
+}
+
+.photo-navigation {
+    text-align: end; 
+    margin-right: 22px;
+    margin-top: 20px;
+}
+
+.entry-title {
+    text-transform: uppercase;
+} 
+
+.page-header p {
+    font-size: 14px;
+    font-family: "Space Mono", Sans-serif;
+}
+
+.photo-thumbnail {
+    width: 85px;
+    height: 85px;
+    margin-left: 88%;
+    margin-top: -18px;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    width: 55px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+    margin-right: -23px;
+}
+
+.arrow-button:hover {
+    font-weight: bold; 
+    color: black; 
+    background-color: transparent;
+}
+
+.divider {
+    width: 1150px; 
+    border-top: 1px solid #000000;
+}

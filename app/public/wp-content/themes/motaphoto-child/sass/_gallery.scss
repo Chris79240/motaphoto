@@ -1,0 +1,37 @@
+/*************** GALERIE PHOTOS ***************/
+
+#photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 10px; /* Espacement entre les images */
+    max-width: 1300px; /* Largeur maximale de la galerie */
+    margin: 20px auto; /* Centre la galerie horizontalement */
+}
+
+#photo-gallery div {
+    float: left;
+}
+
+#load-more-photos {
+    margin-left: 46%;
+}
+
+button#load-more-photos {
+    border: none;
+    font-family: 'Space Mono';
+    color: #000000;
+    background-color: #C4C4C4;
+}
+
+button#load-more-photos:hover {
+    background-color: #C4C4C4; 
+    font-family: 'Space Mono';
+    color: #000000; 
+    cursor: default;
+    border: none;
+}
+
+img {
+    object-fit: cover; 
+    object-position: center;
+}
