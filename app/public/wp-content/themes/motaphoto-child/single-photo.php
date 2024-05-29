@@ -80,8 +80,12 @@ if (have_posts()) : while (have_posts()) : the_post();
                     if (!empty($prev_post)) : ?>
                         <button class="arrow-button" onclick="location.href='<?php echo get_permalink($prev_post->ID); ?>'">&#x2190;</button>
                     <?php endif; ?>
-                    <?php echo get_next_post_link('%link', '→'); ?>
 
+                    <?php
+                    $next_post = get_next_post();
+                    if (!empty($next_post)) : ?>
+                        <button class="arrow-button" onclick="location.href='<?php echo get_permalink($next_post->ID); ?>'">&#x2192;</button>
+                    <?php endif; ?>
 
                 </div>
             </div>
