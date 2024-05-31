@@ -79,9 +79,11 @@ function filter_photos_ajax()
     $category = isset($_POST['category']) ? $_POST['category'] : '';
     $format = isset($_POST['format']) ? $_POST['format'] : '';
     $sort = isset($_POST['sort']) ? $_POST['sort'] : 'date';
+    $page = isset($_POST['page']) ? (int) $_POST['page'] : 1;
     $args = [
         'post_type' => 'photo',
-        'posts_per_page' => -1,
+        'posts_per_page' => 8,
+        'paged' => $page,
         'tax_query' => [
             'relation' => 'AND'
         ],
@@ -125,7 +127,7 @@ add_action('wp_ajax_nopriv_filter_photos', 'filter_photos_ajax');
 /**
  * Gère la pagination infinie AJAX pour les photos.
  */
-function load_more_photos_ajax()
+/*function load_more_photos_ajax()
 {
     $page = isset($_POST['page']) ? (int) $_POST['page'] : 1;
 
@@ -150,3 +152,4 @@ function load_more_photos_ajax()
 }
 add_action('wp_ajax_nopriv_load_more_photos', 'load_more_photos_ajax');
 add_action('wp_ajax_load_more_photos', 'load_more_photos_ajax');
+*/

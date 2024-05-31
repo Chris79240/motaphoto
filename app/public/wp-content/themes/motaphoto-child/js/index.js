@@ -153,13 +153,19 @@ jQuery(document).ready(function($) {
 
     $('#load-more-photos').on('click', function() {
         let button = $(this);
-        let page = button.data('page') || 1;
+        let page = button.data('page') || 2;
+        let category = $('#photo-category').val();
+let format = $('#photo-format').val();
+let sort = $('#photo-sort').val();
         $.ajax({
             url: ajax_object.ajaxurl,
             type: 'POST',
             data: {
-                action: 'load_more_photos',
-                page: page
+                action: 'filter_photos',
+                page: page,
+                category: category,
+format: format,
+sort: sort
             },
             success: function(response) {
                 if (response.success) {
@@ -179,6 +185,9 @@ jQuery(document).ready(function($) {
     $('.open-contact-modal').click(function(e) {
         e.preventDefault();
         $('.contact-modal').fadeIn().css('display', 'flex');
+        let image = $(this).closest('.photo-block').find('img');
+        jQuery("input[name='your-subject']").val(jQuery('.page-header p').html().slice(11));
+        console.log("reference:"+image.data('reference'));
     });
 
     // Fermer la modale au clic à l'extérieur
@@ -231,7 +240,7 @@ jQuery(document).ready(function($) {
     });
 
     // Initialize Select2
-    $('#photo-category').select2();
+   /* $('#photo-category').select2();
     $('#photo-format').select2();
-    $('#photo-sort').select2();
+    $('#photo-sort').select2();*/
 });

@@ -26,7 +26,7 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    align-self: flex-start; /* En haut à gauche */
+    align-self: flex-end; /* En haut à droite */
     pointer-events: auto; /* Permet de cliquer sur cette icône */
 }
 

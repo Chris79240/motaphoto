@@ -161,6 +161,74 @@
         margin-top: 50px;
         margin-bottom: 30px;
     }
+    .photo-block {
+        position: relative;
+        width: 100%;
+        height: auto; /* Définir une hauteur fixe pour toutes les images */
+        overflow: hidden; /* Masquer les parties débordantes de l'image */
+    }
+
+    .photo-block img {
+        width: 100%;
+        object-fit: cover; /* S'assure que l'image couvre tout l'espace sans déformation */
+    }
+
+    .photo-icon, .photo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s;
+        background: rgba(0, 0, 0, 0.5); /* Assure un fond semi-transparent */
+    }
+
+    .photo-block:hover .photo-icon, .photo-block:hover .photo-overlay {
+        opacity: 1;
+    }
+
+    .fullscreen-icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        background-image: url('../assets/images/icon_fullscreen.png');
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .photo-reference {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .photo-category {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    /* Afficher les informations au survol sur mobile */
+    .photo-block:hover .photo-icon,
+    .photo-block:hover .photo-reference,
+    .photo-block:hover .photo-category {
+        opacity: 1;
+    }
 }
 
 /*************** BURGER MENU ***************/
@@ -205,6 +273,16 @@
 }
 
 /*************** SINGLE-PHOTO ***************/
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .related-photos-container {
+        margin-left: 0;
+    }
+    
+    #aussi {
+        margin: 65px 0 40px 2%;
+    }
+}
+
 @media (max-width: 425px) {
     /* Container principal pour centrer le contenu */
     #content {
@@ -218,7 +296,6 @@
     .right-side {
         width: 100%;
         order: 1; /* Afficher en premier */
-//margin-bottom: 20px;
         margin-top: 0;
     }
 
@@ -238,6 +315,7 @@
         align-items: center;
         margin-top: 20px;
         order: 3; /* Afficher en troisième */
+        padding: 10px; /* Ajouter du padding pour éviter le chevauchement */
     }
 
     /* Cacher la miniature et les flèches de navigation */
@@ -270,20 +348,31 @@
 /* Ajuster la taille des images */
     .photo-block img {
         width: 100%;
-        height: auto;
+        height: 550px;
     }
 
     .right-side img {
         width: 100%;
         height: auto;
-
         margin-bottom: 280px;
     }
 
 /* Assurer l'espacement entre les sections */
     .left-side p {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
+
+
+    /* Ajustement du bouton contact */
+.button {
+    margin-top: 3px;
+    margin-right: 17%;
+    margin-bottom: -2rem;
+}
+.button-photo {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 /*************** FOOTER ***************/
