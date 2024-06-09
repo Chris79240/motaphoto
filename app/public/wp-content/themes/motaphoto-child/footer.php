@@ -17,16 +17,18 @@
 </footer>
 
 <div class="containerLightbox" style="display: none;">
-    <div class="lightbox">
+    <div id="lightbox" class="lightbox">
         <div class="lightbox-content">
             <span class="lightboxClose">&times;</span>
-            <img class="lightboxImage" src="" alt="Image agrandie">
-
-            <div class="lightbox-controls">
-                <button class="lightboxPrevious">Précédente</button>
-                <span class="lightboxTitle">Nom de la photo</span>
-                <button class="lightboxNext">Suivante</button>
+            <div class="lightboxPhoto">
+                <img class="lightboxImage" src="" alt="Image de la lightbox">
             </div>
+            <div class="lightbox-details">
+                <span class="lightboxReference"></span>
+                <span class="lightboxCategorie"></span>
+            </div>
+            <span class="lightboxPrevious"></span>
+            <span class="lightboxNext"></span>
         </div>
     </div>
 </div>

@@ -14,8 +14,6 @@ if (have_posts()) : while (have_posts()) : the_post();
         $annee = get_field('annee');
         $categories = wp_get_post_terms(get_the_ID(), 'categories');
         $format = wp_get_post_terms(get_the_ID(), 'format');
-
-
 ?>
         <main id="content" <?php post_class('site-main'); ?>>
             <div class="left-side">
@@ -49,6 +47,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                 </header>
 
                 <hr class="header-divider" />
+                <br>
 
                 <div class="button-photo">
                     <p>Cette photo vous intéresse-t-elle ?</p>
@@ -64,9 +63,6 @@ if (have_posts()) : while (have_posts()) : the_post();
                         <?php the_post_thumbnail('large'); ?>
                     </div>
                 <?php endif; ?>
-
-
-
 
                 <div class="photo-navigation">
 

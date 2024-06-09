@@ -3,8 +3,10 @@
 #photo-filters {
     display: flex;
     justify-content: space-between;
-    margin: 50px 550px;
     align-items: center;
+    max-width: 1440px;
+    margin-top: 20px;
+    margin-left: 12%;
 }
 
 #photo-filters select {

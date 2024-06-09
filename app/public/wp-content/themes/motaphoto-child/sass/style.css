@@ -172,7 +172,7 @@ p {
 #content {
   display: flex;
   position: relative;
-  min-height: 950px;
+  min-height: 970px;
 }
 
 .left-side {
@@ -219,9 +219,9 @@ p {
 .right-side {
   width: 48%;
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   right: 0;
-  margin-top: 15%;
+  margin-top: 20PX;
 }
 
 .photo-navigation {
@@ -273,8 +273,10 @@ p {
 #photo-filters {
   display: flex;
   justify-content: space-between;
-  margin: 50px 550px;
   align-items: center;
+  max-width: 1440px;
+  margin-top: 20px;
+  margin-left: 12%;
 }
 
 #photo-filters select {
@@ -452,31 +454,26 @@ img {
 }
 
 .lightbox-content {
-  width: 80%; /* Largeur de la lightbox */
-  max-width: 600px; /* Largeur maximale de la lightbox */
-  padding: 20px;
-  box-shadow: 0 0 10px #fff;
+  max-width: 30vw; /* Largeur maximale de la lightbox */
   text-align: center;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Ajout de fond noir à la lightbox */
-  max-height: 100vh; /* Limite la hauteur de la lightbox */
 }
 
 .lightboxClose {
   position: absolute;
-  top: 100px;
-  right: 870px;
-  font-size: 30px;
+  top: 5vh;
+  right: 32vw;
+  font-size: 40px;
   color: #fff;
   cursor: pointer;
 }
 
 .lightboxPhoto img {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 70vh;
   display: block;
   margin: 0 auto;
   -o-object-fit: contain;
@@ -489,42 +486,59 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1050;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.lightbox-controls {
-  color: white;
-  text-align: center;
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-}
-
 .lightboxPrevious {
-  margin-right: 400px;
-  margin-bottom: 80px;
+  position: absolute;
+  left: 25vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7vw;
+  height: 50px;
   background-image: url("../assets/images/precedente.png");
+  background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .lightboxNext {
-  margin-left: 290px;
+  position: absolute;
+  right: 27vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6vw;
+  height: 50px;
   background-image: url("../assets/images/suivante.png");
+  background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .lightbox-details {
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  color: #fff;
+  width: 20vw;
+  margin-top: 30px;
+}
+
+.lightbox-controls button {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+}
+
+.lightboxReference {
+  text-align: left;
+  font-size: 20px;
+}
+
+.lightboxCategorie {
+  text-align: right;
+  font-size: 20px;
 }
 
 .contact-modal {
@@ -532,9 +546,9 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -671,7 +685,7 @@ button.nav-toggler {
 }
 
 .burger-menu-content a:hover {
-  background-color: #f1f1f1;
+  color: #ffffff;
 }
 
 /*************** TYPOGRAPHIE MOBILE ***************/
@@ -744,16 +758,25 @@ button.nav-toggler {
   }
 }
 /*************** FILTRES ***************/
+@media (min-width: 1441px) {
+  #photo-filters {
+    margin-left: 24.5vw;
+  }
+  #load-more-photos {
+    margin-left: 47vw;
+  }
+}
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   #photo-filters {
     margin: 20px 0;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  #photo-filters select {
-    width: 220px !important;
-    margin-right: -300px;
-    margin-left: -400px;
+  #photo-filters {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 25%;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -849,6 +872,7 @@ button.nav-toggler {
     height: 30px;
     background-image: url("../assets/images/icon_fullscreen.png");
     background-size: cover;
+    align-self: flex-end !important;
     cursor: pointer;
   }
   .photo-reference {
@@ -913,8 +937,71 @@ button.nav-toggler {
     opacity: 0;
   }
 }
+/*************** LIGHTBOX ***************/
+@media screen and (min-width: 426px) and (max-width: 1440px) {
+  .lightbox-content {
+    max-width: 40vw;
+  }
+  .lightboxPrevious {
+    left: 20vw;
+  }
+  .lightboxNext {
+    right: 20vw;
+  }
+}
+@media (max-width: 425px) {
+  .containerLightbox {
+    width: 100vw;
+  }
+  .lightbox {
+    width: 100vw;
+  }
+  .lightbox-content {
+    max-width: 64vw;
+  }
+  .lightboxPrevious {
+    left: 3vw;
+    width: 15vw;
+    background-size: contain;
+  }
+  .lightboxNext {
+    right: 3vw;
+    width: 15vw;
+    background-size: contain;
+  }
+  .lightboxClose {
+    top: 23vh;
+    right: 5vw;
+    font-size: 30px;
+  }
+  .lightbox-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lightboxReference {
+    font-size: 10px;
+  }
+  .lightboxCategorie {
+    font-size: 10px;
+  }
+}
 /*************** SINGLE-PHOTO ***************/
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .right-side {
+    bottom: 30px;
+  }
+  .related-photos-container {
+    margin-left: 10vw;
+  }
+  #aussi {
+    margin: 65px 0 40px 10vw;
+  }
+}
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  .right-side {
+    bottom: 70px;
+  }
   .related-photos-container {
     margin-left: 0;
   }
@@ -932,16 +1019,22 @@ button.nav-toggler {
   }
   /* Image principale */
   .right-side {
-    width: 100%;
+    width: 95%;
+    margin-bottom: 30px;
+    margin-right: 10px;
     order: 1; /* Afficher en premier */
-    margin-top: 0;
   }
   /* Titre de la page */
-  .entry-title {
+  .page-header {
     width: 100%;
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 45px;
+    margin-bottom: 100px;
     order: 2; /* Afficher en deuxième */
+  }
+  .entry-title {
+    font-size: 50px !important;
   }
   /* Infos en dessous du titre */
   .left-side {
@@ -961,7 +1054,7 @@ button.nav-toggler {
   /* Traît de séparation */
   .header-divider,
   .divider {
-    width: 100%;
+    width: 425px;
     margin: 20px 0;
   }
   /* Section "Vous aimerez aussi" */
@@ -979,12 +1072,12 @@ button.nav-toggler {
   /* Ajuster la taille des images */
   .photo-block img {
     width: 100%;
-    height: 550px;
+    height: 450px;
   }
   .right-side img {
     width: 100%;
-    height: auto;
-    margin-bottom: 280px;
+    height: 450px;
+    margin-bottom: 435px;
   }
   /* Assurer l'espacement entre les sections */
   .left-side p {
@@ -996,9 +1089,13 @@ button.nav-toggler {
     margin-right: 17%;
     margin-bottom: -2rem;
   }
+  .button-photo button {
+    margin-bottom: 30px;
+  }
   .button-photo {
     display: flex;
     flex-direction: column;
+    margin-bottom: -55px;
   }
 }
 /*************** FOOTER ***************/
